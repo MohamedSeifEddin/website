@@ -93,6 +93,91 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section id="education" className="py-20 bg-white">
+          <div className="container mx-auto max-w-6xl text-center space-y-10">
+            <h2 className="text-4xl font-bold text-gray-800">My Education</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {[
+                {
+                  title: "Applied Computer Science",
+                  institution: "Hogeschool Gent",
+                  duration: "2022 - Present",
+                  description:
+                    "Focused on Functional & Business Analysis, gaining expertise in bridging the gap between technical and business needs.",
+                  logo: "hogent.jpg", // Path to the logo
+                },
+                {
+                  title: "High School Diploma",
+                  institution: "Lyceum Aalst",
+                  duration: "2016 - 2022",
+                  description: "Economics & Modern Languages",
+                  logo: "lyceum.png", // Path to the logo
+                },
+              ].map((edu, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                >
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src={edu.logo}
+                      alt={`${edu.institution} logo`}
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800">
+                    {edu.title}
+                  </h3>
+                  <p className="text-gray-600 mt-2">{edu.institution}</p>
+                  <p className="text-gray-500 mt-1">{edu.duration}</p>
+                  <p className="text-gray-600 mt-4">{edu.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="work-experience" className="py-20 bg-gray-100">
+          <div className="container mx-auto max-w-6xl text-center space-y-10">
+            <h2 className="text-4xl font-bold text-gray-800">
+              My Work Experience
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+              {[
+                {
+                  company: "TD SYNNEX",
+                  role: "System Configurator",
+                  duration: "Jun 2021 - Present",
+                  description: `Responsible for configuring systems and solving technical problems. 
+          Since 2021, I have worked every summer at TD Synnex as a system configurator, managing tasks like imaging and upgrading laptops for Signpost according to client specifications, such as additional RAM or storage.
+          Additionally, I resolve technical issues during the process. Over time, I have taken on more responsibilities, such as preparing orders, printing labels, and mentoring new team members. 
+          This role has enhanced my leadership and communication skills, including collaborating in English with non-Dutch-speaking colleagues.`,
+                  logo: "tdsynnex.png", // Replace with the actual logo path
+                },
+              ].map((job, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                >
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src={job.logo}
+                      alt={`${job.company} logo`}
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-gray-800">
+                    {job.role}
+                  </h3>
+                  <p className="text-gray-600 mt-2">{job.company}</p>
+                  <p className="text-gray-500 mt-1">{job.duration}</p>
+                  <p className="text-gray-600 mt-4">{job.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact */}
         <section id="contact" className="py-20 bg-gray-900 text-gray-300">
           <div className="container mx-auto max-w-4xl text-center space-y-6">
