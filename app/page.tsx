@@ -1,6 +1,8 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Image from "next/image";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -8,13 +10,15 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-purple-600 to-cyan-500 text-white text-center px-6">
-          <h1 className="text-5xl font-extrabold">Hi, I'm Kyno.</h1>
+          <h1 className="text-5xl font-extrabold">Hi, I&apos;m Kyno.</h1>
           <p className="mt-4 text-lg text-gray-200">
             Business Analyst Student at Hogent
           </p>
-          <button className="mt-6 bg-white text-purple-600 px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">
-            Check out my projects
-          </button>
+          <Link href="/projects">
+            <button className="mt-6 bg-white text-purple-600 px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">
+              Check out my projects
+            </button>
+          </Link>
           <div className="mt-8 flex justify-center space-x-12">
             {/* LinkedIn */}
             <a
@@ -35,6 +39,7 @@ export default function Home() {
             </a>
           </div>
         </section>
+
         {/* About Me */}
         <section id="about" className="py-20 bg-gray-100">
           <div className="container mx-auto max-w-4xl text-center space-y-6">
@@ -54,8 +59,8 @@ export default function Home() {
             </p>
           </div>
         </section>
-        {/* Skills */}
 
+        {/* Skills */}
         <section id="skills" className="py-20 bg-gray-50">
           <div className="container mx-auto max-w-6xl text-center space-y-10">
             <h2 className="text-4xl font-bold text-gray-800">My Skills</h2>
@@ -93,6 +98,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Education */}
         <section id="education" className="py-20 bg-white">
           <div className="container mx-auto max-w-6xl text-center space-y-10">
             <h2 className="text-4xl font-bold text-gray-800">My Education</h2>
@@ -104,14 +111,14 @@ export default function Home() {
                   duration: "2022 - Present",
                   description:
                     "Focused on Functional & Business Analysis, gaining expertise in bridging the gap between technical and business needs.",
-                  logo: "hogent.jpg", // Path to the logo
+                  logo: "/hogent.jpg", // Ensure the correct relative path
                 },
                 {
                   title: "High School Diploma",
                   institution: "Lyceum Aalst",
                   duration: "2016 - 2022",
                   description: "Economics & Modern Languages",
-                  logo: "lyceum.png", // Path to the logo
+                  logo: "/lyceum.png", // Ensure the correct relative path
                 },
               ].map((edu, index) => (
                 <div
@@ -119,10 +126,12 @@ export default function Home() {
                   className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
                 >
                   <div className="flex justify-center mb-4">
-                    <img
+                    <Image
                       src={edu.logo}
                       alt={`${edu.institution} logo`}
                       className="w-16 h-16 object-contain"
+                      width={100}
+                      height={100}
                     />
                   </div>
                   <h3 className="text-2xl font-semibold text-gray-800">
@@ -137,6 +146,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Work Experience */}
         <section id="work-experience" className="py-20 bg-gray-100">
           <div className="container mx-auto max-w-6xl text-center space-y-10">
             <h2 className="text-4xl font-bold text-gray-800">
@@ -152,7 +162,7 @@ export default function Home() {
           Since 2021, I have worked every summer at TD Synnex as a system configurator, managing tasks like imaging and upgrading laptops for Signpost according to client specifications, such as additional RAM or storage.
           Additionally, I resolve technical issues during the process. Over time, I have taken on more responsibilities, such as preparing orders, printing labels, and mentoring new team members. 
           This role has enhanced my leadership and communication skills, including collaborating in English with non-Dutch-speaking colleagues.`,
-                  logo: "tdsynnex.png", // Replace with the actual logo path
+                  logo: "/tdsynnex.png", // Ensure the correct relative path
                 },
               ].map((job, index) => (
                 <div
@@ -160,10 +170,12 @@ export default function Home() {
                   className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
                 >
                   <div className="flex justify-center mb-4">
-                    <img
+                    <Image
                       src={job.logo}
                       alt={`${job.company} logo`}
                       className="w-16 h-16 object-contain"
+                      width={100}
+                      height={100}
                     />
                   </div>
                   <h3 className="text-2xl font-semibold text-gray-800">
