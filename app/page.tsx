@@ -14,7 +14,7 @@ export default function Home() {
           <p className="mt-4 text-lg text-gray-200">
             Business Analyst Student at Hogent
           </p>
-          <Link href="/projects">
+          <Link href="#projects">
             <button className="mt-6 bg-white text-purple-600 px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">
               Check out my projects
             </button>
@@ -189,6 +189,144 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Projects */}
+        <section id="projects" className="py-20 bg-gray-50">
+          <div className="container mx-auto max-w-6xl text-center space-y-10">
+            <h2 className="text-4xl font-bold text-gray-800">My Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+              {/* Oefeningenwebsite */}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Math excercise platform
+                </h3>
+                <p className="text-gray-600 mt-2">
+                  Currently in development, a collaborative project with Arthur
+                  Vercammen to create an interactive math exercise platform with
+                  personalized learning features.
+                </p>
+              </div>
+              {/* MK Luxe Detailing - Next.js Website */}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  MK Luxe Detailing Website
+                </h3>
+                <p className="text-gray-600 mt-2">
+                  A website developed with Next.js for MK Luxe Detailing,
+                  showcasing their services and offerings.
+                </p>
+                <p className="text-gray-600 mt-2">
+                  <strong>Skills:</strong> Next.js
+                </p>
+                <a
+                  href="https://mk-luxe.vercel.app/"
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Link
+                </a>
+              </div>
+
+              {/* Spots of Knowledge - Drupal Website */}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Spots of Knowledge - Website
+                </h3>
+                <p className="text-gray-600 mt-2">
+                  A booking platform for events built using Drupal, providing an
+                  intuitive user experience for both customers and admins.
+                </p>
+                <p className="text-gray-600 mt-2">
+                  <strong>Skills:</strong> Drupal
+                </p>
+                <a
+                  href="https://test-spotsofknowledge.pantheonsite.io/"
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Link
+                </a>
+              </div>
+
+              {/* Sap Build App */}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Sap Build App
+                </h3>
+                <p className="text-gray-600 mt-2">
+                  A car management app where users can add, edit, and remove
+                  cars, utilizing a custom API hosted on Google Cloud Firestore.
+                </p>
+                <p className="text-gray-600 mt-2">
+                  <strong>Skills:</strong> SAP Build, Cloud Firestore
+                </p>
+              </div>
+
+              {/* Sap Fiori App */}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Sap Fiori App
+                </h3>
+                <p className="text-gray-600 mt-2">
+                  A simple app built with SAP Fiori showcasing favorite games
+                  for a student. Includes basic web technologies such as HTML,
+                  CSS, and JavaScript.
+                </p>
+                <p className="text-gray-600 mt-2">
+                  <strong>Skills:</strong> JavaScript, CSS, HTML
+                </p>
+              </div>
+
+              {/* Flexso - Business Software Project */}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Flexso - Business Software Project
+                </h3>
+                <p className="text-gray-600 mt-2">
+                  A project aimed at familiarizing with SAP technologies by
+                  developing an event management application with SAP CAP.
+                </p>
+                <p className="text-gray-600 mt-2">
+                  <strong>Skills:</strong> SAP, JavaScript, CSS, XML
+                </p>
+                <a
+                  href="https://github.com/flexso-hogent/P2BS_2324_Aalst"
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  View on GitHub
+                </a>
+              </div>
+
+              {/* PrestigeDrive */}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  PrestigeDrive
+                </h3>
+                <p className="text-gray-600 mt-2">
+                  A car rental website developed with React.js for the frontend
+                  and Node.js for the backend.
+                </p>
+                <p className="text-gray-600 mt-2">
+                  <strong>Skills:</strong> React.js, Node.js, SQL
+                </p>
+              </div>
+
+              {/* Splendor Game */}
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Splendor Game
+                </h3>
+                <p className="text-gray-600 mt-2">
+                  A Java implementation of the game Splendor, using JavaFX for
+                  the user interface.
+                </p>
+                <p className="text-gray-600 mt-2">
+                  <strong>Skills:</strong> Java, JavaFX
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Contact */}
         <section id="contact" className="py-20 bg-gray-900 text-gray-300">
@@ -198,7 +336,7 @@ export default function Home() {
               Feel free to reach out for collaborations or just to say hi!
             </p>
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:kyno1204@gmail.com"
               className="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-500 transition"
             >
               Contact Me
