@@ -1,9 +1,9 @@
-import './globals.css';
-import { ReactNode } from 'react';
+import "./globals.css";
+import { ReactNode } from "react";
 
 export const metadata = {
-  title: 'Kyno Portfolio',
-  description: 'A personal portfolio site',
+  title: "Kyno",
+  description: "A personal portfolio site",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
