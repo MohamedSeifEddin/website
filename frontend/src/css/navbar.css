@@ -1,0 +1,97 @@
+/* Stijl voor de navigatiebalk container */
+.navbar-container {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  background-color: #319795; /* Teal.500 */
+  color: white;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem; /* Chakra's md border radius */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Stijl voor de rating in het midden */
+.navbar-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-rating-text {
+  font-size: 1.25rem; /* Larger font size */
+  font-weight: bold;
+  color: white; /* White text for better contrast */
+  margin-right: 0.5rem;
+}
+
+.navbar-star-icon {
+  color: #81E6D9; /* Teal.200 */
+  font-size: 1.25rem; /* Larger star icons */
+}
+
+/* Stijl voor de navigatielinks op desktop */
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/* Verbeterde linkstijl */
+.navbar-link {
+  background-color: transparent;
+  color: white; /* White text for better readability */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Add a subtle hover effect */
+  transform: translateY(-2px);
+}
+
+.navbar-link:active {
+  background-color: rgba(255, 255, 255, 0.3); /* Subtle click effect */
+}
+
+.navbar-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #38B2AC; /* Teal.400 */
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.navbar-link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Stijl voor de modal */
+.modal-logo {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
