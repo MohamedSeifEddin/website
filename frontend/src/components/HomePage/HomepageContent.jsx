@@ -74,29 +74,27 @@ function PortfolioPage() {
       </Box>
 
       <Container maxW="900px" py={24}>
-        {/* Over Mij */}
-        <VStack align="start" spacing={6} ref={aboutRef} py={10}>
-          <Heading size="2xl">Over Mij</Heading>
-          <HStack spacing={6} align="start">
+        <VStack align="center" spacing={8} ref={aboutRef} py={12} bg="gray.900" minH="100vh">
+          <Heading size="2xl" fontWeight="bold" textAlign="center" >
+            Over Mij
+          </Heading>
+          <HStack spacing={8} align="start" justify="center">
             <Image 
               src="https://i.postimg.cc/zf1d3YfW/126155811.jpg" 
               alt="Mohamed Seif Eddin" 
-              boxSize="150px" 
+              boxSize="180px" 
               borderRadius="full" 
               objectFit="cover" 
+              shadow="2xl"
             />
-            <VStack align="start" spacing={4}>
-              <Text fontSize="lg" lineHeight="tall">
-                Hallo! Mijn naam is <b>Mohamed Seif Eddin</b>. Als gedreven en leergierige professional ben ik altijd op zoek naar nieuwe uitdagingen en groeimogelijkheden. 
-                Momenteel studeer ik <b>Toegepaste Informatica & Business Analysis</b>, waarbij ik ervaring heb opgedaan in het configureren van systemen en het optimaliseren van IT-processen. 
-                Mijn ambitie is om mijn expertise in de IT-sector continu te verbreden en te verdiepen.
+            <VStack align="start" spacing={6} maxW="lg">
+              <Text fontSize="xl" lineHeight="tall" color="gray.200">
+                Hallo! Mijn naam is <Text as="span" fontWeight="bold" color="teal.400">Mohamed Seif Eddin</Text>. Als gedreven en leergierige professional ben ik altijd op zoek naar nieuwe uitdagingen en groeimogelijkheden. Momenteel studeer ik <Text as="span" fontWeight="bold" color="teal.400">Toegepaste Informatica</Text> specificatie in <Text as="span" fontWeight="bold" color="teal.400">Business Analysis</Text>. Mijn ambitie is om mijn expertise in de IT-sector continu te verbreden en te verdiepen.
               </Text>
-              <Text fontSize="lg" lineHeight="tall">
-                Daarnaast heb ik waardevolle ervaring in de voedingsindustrie, waar ik mijn flexibiliteit, stressbestendigheid en nauwkeurigheid heb bewezen. 
-                Ik ben een echte <b>teamspeler</b> die vlot communiceert met zowel klanten als collega’s. 
-                Mijn proactieve houding en analytisch denkvermogen helpen mij om steeds efficiënte en innovatieve oplossingen te vinden.
+              <Text fontSize="xl" lineHeight="tall" color="gray.200">
+                Daarnaast heb ik waardevolle ervaring in de voedingsindustrie, waar ik mijn <Text as="span" fontWeight="bold" color="teal.400">flexibiliteit</Text>, <Text as="span" fontWeight="bold" color="teal.400">stressbestendigheid</Text> en <Text as="span" fontWeight="bold" color="teal.400">nauwkeurigheid</Text> heb bewezen. Ik ben een echte <Text as="span" fontWeight="bold" color="teal.400">teamspeler</Text> die vlot communiceert met zowel klanten als collega’s. Mijn proactieve houding en analytisch denkvermogen helpen mij om steeds efficiënte en innovatieve oplossingen te vinden.
               </Text>
-              <Text fontSize="lg" lineHeight="tall">
+              <Text fontSize="xl" lineHeight="tall" color="gray.200">
                 Ik ben voortdurend op zoek naar mogelijkheden om mijn vaardigheden verder te ontwikkelen en een waardevolle bijdrage te leveren aan elk team waarin ik werk.
               </Text>
             </VStack>
@@ -108,7 +106,7 @@ function PortfolioPage() {
         {/* Vaardigheden */}
         <VStack align="start" spacing={8} ref={skillsRef} py={12} w="full">
           <Heading size="2xl" fontWeight="bold" color="white">
-            Vaardigheden
+            ICT Vaardigheden
           </Heading>
           <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={6} w="full">
             {[ 
@@ -154,83 +152,117 @@ function PortfolioPage() {
         <Divider borderColor="gray.600" />
 
         {/* Opleiding */}
-        <VStack align="start" spacing={4} ref={educationRef} py={10}>
-          <Heading size="2xl">Opleiding</Heading>
-          <Text fontSize="lg">🎓 <b>Bachelor Informatica</b> - HoGent Campus Aalst (2022 - heden)</Text>
-          <Text fontSize="lg">🎓 <b>Lyceum Aalst</b> - ASO, Wetenschappen-Wiskunde (2015 - 2021)</Text>
-          <Text fontSize="md">📌 7 uur wiskunde</Text>
-        </VStack>
-        <Divider borderColor="gray.600" />
 
         {/* hobbys */}
-        <VStack align="start" spacing={4} ref={experienceRef} py={10}>
-          <Heading size="2xl">Hobby's & Passies</Heading>
+        <VStack align="center" spacing={6} ref={experienceRef} py={12} bg="gray.900" minH="100vh">
+          <Heading size="2xl" textAlign="center" fontWeight="bold" >
+            Hobby's & Passies
+          </Heading>
 
-          <Text fontSize="lg" color="gray.400">
-            ♟️ Schaken is voor mij meer dan een spel; het is een mentale 
-            uitdaging waarin strategie en geduld samenkomen. 
-            Elke zet dwingt me om vooruit te denken en slimme beslissingen te nemen. 
-            Schaken helpt me om mijn analytische vaardigheden te verbeteren
-            en altijd met een lange-termijn visie te werken.
-          </Text>
+          <VStack spacing={6} align="start" maxW="3xl" mx="auto">
+            {/* Chess Section */}
+            <Box borderLeft="4px" borderColor="teal.400" pl={4} py={4} mb={6}>
+              <Text fontSize="lg" color="gray.300" fontWeight="medium">
+                ♟️ <b>Schaken:</b> Voor mij is schaken meer dan gewoon een bordspel. Het is een mentale uitdaging die geduld en strategie vereist. 
+                Elke zet daagt me uit om vooruit te denken en slimme, weloverwogen keuzes te maken. 
+                Het scherpt mijn analytisch vermogen en versterkt mijn vermogen om met een lange-termijn visie te werken — een essentiële vaardigheid in zowel mijn persoonlijke als professionele leven.
+              </Text>
+            </Box>
 
-          <Text fontSize="lg" color="gray.400">
-            🏋️‍♂️ Fitness is een ander belangrijk onderdeel van mijn leven. 
-            Het is niet alleen een manier om sterker en fitter te worden, 
-            maar het helpt me ook mijn discipline en doorzettingsvermogen te trainen. 
-            Ik geloof dat fysieke kracht ook mentaal kracht oplevert.
-          </Text>
+            {/* Fitness Section */}
+            <Box borderLeft="4px" borderColor="teal.400" pl={4} py={4} mb={6}>
+              <Text fontSize="lg" color="gray.300" fontWeight="medium">
+                🏋️‍♂️ <b>Fitness:</b> Fitness is voor mij een manier om zowel mentaal als fysiek sterker te worden. Het gaat niet alleen om spiermassa, maar om het ontwikkelen van discipline, doorzettingsvermogen en focus. 
+                Elke training helpt me niet alleen mijn lichaam te verbeteren, maar versterkt ook mijn geest. 
+                Ik geloof dat fysieke kracht direct bijdraagt aan mentale kracht en dat een gezonde geest in een gezond lichaam essentieel is voor succes in elk aspect van het leven.
+              </Text>
+            </Box>
 
-          <Text fontSize="lg" color="gray.400">
-            🎥 Daarnaast ben ik gepassioneerd door het maken van video's. 
-            Op platforms zoals <Link color="teal.400" href="https://www.tiktok.com/@ms_lift" isExternal> TikTok </Link>, 
-            <Link color="teal.400" href="https://www.instagram.com/ms_liftss/reels/" isExternal> Instagram </Link>,
-            en als podcaster op <Link color="teal.400"
-              href="https://www.youtube.com/@Thebrothercastbe" isExternal> YouTube </Link> 
-            deel ik mijn content. Dit heeft me niet alleen geleerd om te filmen en video's. te bewerken, 
-            maar ook hoe ik mijn boodschap op
-            een authentieke manier kan overbrengen. Mijn doel is om mensen te motiveren om de beste versie 
-            van zichzelf te worden. 
-          </Text>
+            {/* Video Making & Social Media Section */}
+            <Box borderLeft="4px" borderColor="teal.400" pl={4} py={4} mb={6}>
+              <Text fontSize="lg" color="gray.300" fontWeight="medium">
+                🎥 <b>Video Maken & Creatieve Content:</b> Ik ben gepassioneerd door het creëren van content en het delen van mijn verhalen via platforms zoals 
+                <Link color="teal.400" href="https://www.tiktok.com/@ms_lift" isExternal> TikTok</Link>, 
+                <Link color="teal.400" href="https://www.instagram.com/ms_liftss/reels/" isExternal> Instagram</Link>, en als podcaster op <Link color="teal.400" href="https://www.youtube.com/@Thebrothercastbe" isExternal> YouTube</Link>. 
+                Dit proces helpt me niet alleen om mijn vaardigheden in filmen en bewerken te verbeteren, maar het biedt me ook de kans om mensen te inspireren. 
+                Mijn doel is om mijn boodschap van zelfverbetering, motivatie en groei op een authentieke manier over te brengen en anderen te helpen de beste versie van zichzelf te worden.
+              </Text>
+            </Box>
 
-          <Text fontSize="lg" color="gray.400">
-            🎙️ Mijn podcast is ook beschikbaar op Spotify,
-            waar ik gesprekken voer over groei, motivatie en zelfverbetering. 
-            In de toekomst wil ik van mijn videomaken en podcasten mijn werk maken, 
-            zodat ik anderen kan inspireren en helpen hun volledige potentieel te bereiken.
-          </Text>
+            {/* Podcast Section */}
+            <Box borderLeft="4px" borderColor="teal.400" pl={4} py={4}>
+              <Text fontSize="lg" color="gray.300" fontWeight="medium">
+                🎙️ <b>Podcasten:</b> Als podcaster ben ik altijd bezig met gesprekken over persoonlijke groei, motivatie en zelfverbetering. 
+                Mijn podcast is beschikbaar op <Link color="teal.400" href="https://open.spotify.com/show/5su0OZ6rwSKkCWFUPcCPAD" isExternal>Spotify</Link>, en het biedt me de mogelijkheid om mijn ervaringen en inzichten te delen met een breder publiek. 
+                In de toekomst wil ik van mijn werk als videomaker en podcaster mijn carrière maken, zodat ik nog meer mensen kan inspireren om hun volledige potentieel te ontdekken en te benutten.
+              </Text>
+            </Box>
+          </VStack>
         </VStack>
 
         <Divider borderColor="gray.600" />
 
         {/* Projecten */}
-        <VStack align="start" spacing={4} ref={projectsRef} py={10}>
-          <Heading size="2xl">Projecten</Heading>
-          <Text fontSize="lg" color="gray.400">
-            Je kunt meer over mijn projecten en ervaringen terugvinden op mijn LinkedIn profiel.
-            Bekijk het hier: <Link color="teal.400" href="https://www.linkedin.com/in/mohamed-seif-eddin-bb7874266/details/projects/" isExternal>
-              Mijn LinkedIn
-            </Link>
-          </Text>
+        <VStack align="center" spacing={6} ref={projectsRef} bg="gray.900" >
+          <Heading size="2xl" textAlign="center" fontWeight="bold" >
+            Projecten
+          </Heading>
+
+          <Box
+            border="1px"
+            borderColor="teal.400"
+            borderRadius="lg"
+            p={6}
+            boxShadow="lg"
+            maxW="4xl"
+            mx="auto"
+            bg="gray.800"
+          >
+            <Text fontSize="lg" color="gray.300" textAlign="center">
+              Je kunt meer over mijn projecten en ervaringen terugvinden op mijn LinkedIn profiel. 
+              Bekijk het hier:
+            </Text>
+            <Text fontSize="lg" color="teal.400" textAlign="center" mt={4}>
+              <Link color="teal.400" href="https://www.linkedin.com/in/mohamed-seif-eddin-bb7874266/details/projects/" isExternal>
+                Mijn LinkedIn
+              </Link>
+            </Text>
+          </Box>
+
+          <Divider borderColor="gray.600" mt={8} />
         </VStack>
-        <Divider borderColor="gray.600" />
 
         {/* Contact */}
-        <VStack align="start" spacing={4} ref={contactRef} py={10}>
-          <Heading size="2xl">Contact</Heading>
-          <HStack spacing={4}>
+        <VStack align="center" spacing={6} >
+          <Heading size="2xl" textAlign="center" fontWeight="bold">
+            Contact
+          </Heading>
+          <HStack spacing={6} justify="center" w="full">
             <Link href="mailto:mohamedseifeddin2003@gmail.com" isExternal>
-              <IconButton icon={<FaEnvelope />} size="lg" colorScheme="blue" />
+              <IconButton
+                icon={<FaEnvelope />}
+                size="lg"
+                colorScheme="blue"
+                borderRadius="full"
+                _hover={{ bg: 'blue.600', transform: 'scale(1.1)', transition: '0.3s' }}
+                aria-label="Email"
+              />
             </Link>
-            <Link href="https://github.com/MohamedSeifEddin" isExternal>
-              <IconButton icon={<FaGithub />} size="lg" colorScheme="gray" />
-            </Link>
+          
             <Link href="https://www.linkedin.com/in/mohamed-seif-eddin-bb7874266/" isExternal>
-              <IconButton icon={<FaLinkedin />} size="lg" colorScheme="blue" />
+              <IconButton
+                icon={<FaLinkedin />}
+                size="lg"
+                colorScheme="blue"
+                borderRadius="full"
+                _hover={{ bg: 'blue.600', transform: 'scale(1.1)', transition: '0.3s' }}
+                aria-label="LinkedIn"
+              />
             </Link>
           </HStack>
         </VStack>
       </Container>
+      <Divider borderColor="gray.600" />
     </Box>
   );
 }

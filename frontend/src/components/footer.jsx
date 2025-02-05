@@ -12,7 +12,7 @@ function Footer() {
         Get in Touch
       </Text>
       <Text mt={2} fontSize="md">
-        Moesten er vrae
+        Moesten er vragen zijn, aarzel dan niet om contact op te nemen.
       </Text>
 
       <Flex justify="center" mt={4}>
