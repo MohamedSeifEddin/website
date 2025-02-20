@@ -155,6 +155,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               {[
                 {
+                  company: "Flexso",
+                  role: "Internship",
+                  duration: "Feb 2025 - Present",
+                  description: `During my internship at Flexso, I will work on a SAP UI5 budget application with CAP and explored potential LLM implementations.`,
+                  logo: "/flexso.png", // Ensure the correct relative path
+                },
+                {
                   company: "TD SYNNEX",
                   role: "System Configurator",
                   duration: "Jun 2021 - Present",
@@ -197,7 +204,7 @@ export default function Home() {
               {/* Oefeningenwebsite */}
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
                 <h3 className="text-xl font-semibold text-gray-800">
-                  Math excercise platform
+                  Studyfile{" "}
                 </h3>
                 <p className="text-gray-600 mt-2">
                   Currently in development, a collaborative project with Arthur
@@ -218,7 +225,7 @@ export default function Home() {
                   <strong>Skills:</strong> Next.js
                 </p>
                 <a
-                  href="https://mk-luxe.vercel.app/"
+                  href="https://mkluxedetailing.be/"
                   target="_blank"
                   className="text-blue-500 hover:underline"
                 >
