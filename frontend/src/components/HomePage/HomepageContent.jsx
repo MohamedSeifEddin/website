@@ -21,7 +21,6 @@ function PortfolioPage() {
       const sections = [
         { ref: aboutRef, label: 'Over Mij' },
         { ref: skillsRef, label: 'Vaardigheden' },
-        { ref: educationRef, label: 'Opleiding' },
         { ref: experienceRef, label: 'Hobby\'s' },
         { ref: projectsRef, label: 'Projecten' },
         { ref: contactRef, label: 'Contact' },
@@ -52,7 +51,7 @@ function PortfolioPage() {
             {[ 
               { label: 'Over Mij', ref: aboutRef },
               { label: 'Vaardigheden', ref: skillsRef },
-              { label: 'Opleiding', ref: educationRef },
+              
               { label: 'Hobby\'s', ref: experienceRef },
               { label: 'Projecten', ref: projectsRef },
               { label: 'Contact', ref: contactRef },
@@ -151,8 +150,6 @@ function PortfolioPage() {
 
         <Divider borderColor="gray.600" />
 
-        {/* Opleiding */}
-
         {/* hobbys */}
         <VStack align="center" spacing={6} ref={experienceRef} py={12} bg="gray.900" minH="100vh">
           <Heading size="2xl" textAlign="center" fontWeight="bold" >
@@ -231,9 +228,8 @@ function PortfolioPage() {
 
           <Divider borderColor="gray.600" mt={8} />
         </VStack>
-
         {/* Contact */}
-        <VStack align="center" spacing={6} >
+        <VStack align="center" spacing={6} ref={contactRef}>
           <Heading size="2xl" textAlign="center" fontWeight="bold">
             Contact
           </Heading>
@@ -248,7 +244,7 @@ function PortfolioPage() {
                 aria-label="Email"
               />
             </Link>
-          
+
             <Link href="https://www.linkedin.com/in/mohamed-seif-eddin-bb7874266/" isExternal>
               <IconButton
                 icon={<FaLinkedin />}
@@ -261,6 +257,7 @@ function PortfolioPage() {
             </Link>
           </HStack>
         </VStack>
+
       </Container>
       <Divider borderColor="gray.600" />
     </Box>
