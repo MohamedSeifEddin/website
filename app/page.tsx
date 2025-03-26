@@ -19,7 +19,7 @@ export default function Home() {
               Check out my projects
             </button>
           </Link>
-          <div className="mt-8 flex justify-center space-x-12">
+          <div className="mt-8 flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-12 sm:space-y-0">
             {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/kyno-van-de-velde-7bb876266/"

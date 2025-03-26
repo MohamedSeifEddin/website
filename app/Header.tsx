@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className="fixed w-full bg-white shadow-md z-50">
-      <nav className="container mx-auto flex justify-between items-center py-4 px-6">
+      <nav className="container mx-auto flex justify-between items-center py-4 px-6 relative">
         {/* Logo */}
         <div className="text-2xl font-extrabold text-blue-600">
           <Link href="/">Kyno</Link>
@@ -42,54 +42,60 @@ const Header = () => {
           </svg>
         </button>
 
-        {/* Navigation Links */}
-        <ul
-          className={`flex-col md:flex-row md:flex md:space-x-6 space-y-4 md:space-y-0 items-center absolute md:static bg-white w-full md:w-auto left-0 top-16 md:top-0 transition-all duration-300 ease-in-out ${
-            isOpen ? "flex" : "hidden"
-          }`}
+        {/* Side Navigation Menu */}
+        <div
+          className={`fixed top-0 left-0 w-64 h-full bg-blue-600 text-white transform ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          } transition-transform duration-500 ease-in-out z-50`}
         >
-          <li>
-            <Link
-              href="#about"
-              className="text-gray-700 hover:text-blue-600 transition font-medium"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#skills"
-              className="text-gray-700 hover:text-blue-600 transition font-medium"
-            >
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#education"
-              className="text-gray-700 hover:text-blue-600 transition font-medium"
-            >
-              Education
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#work-experience"
-              className="text-gray-700 hover:text-blue-600 transition font-medium"
-            >
-              Work Experience
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href="#contact"
-              className="text-gray-700 hover:text-blue-600 transition font-medium"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+          <ul className="flex flex-col items-center justify-center space-y-8 h-full">
+            <li>
+              <Link
+                href="#about"
+                className="text-xl font-medium hover:text-gray-200 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#skills"
+                className="text-xl font-medium hover:text-gray-200 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#education"
+                className="text-xl font-medium hover:text-gray-200 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Education
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#work-experience"
+                className="text-xl font-medium hover:text-gray-200 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Work Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#contact"
+                className="text-xl font-medium hover:text-gray-200 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
