@@ -208,8 +208,8 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-600 mt-2">
                   Currently in development, a collaborative project with Arthur
-                  Vercammen to create an interactive math exercise platform with
-                  personalized learning features.
+                  Vercammen & Seppe Visart to create an interactive math
+                  exercise platform with personalized learning features.
                 </p>
               </div>
               {/* MK Luxe Detailing - Next.js Website */}
