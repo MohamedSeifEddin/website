@@ -51,7 +51,6 @@ function PortfolioPage() {
             {[ 
               { label: 'Over Mij', ref: aboutRef },
               { label: 'Vaardigheden', ref: skillsRef },
-              
               { label: 'Hobby\'s', ref: experienceRef },
               { label: 'Projecten', ref: projectsRef },
               { label: 'Contact', ref: contactRef },
@@ -68,10 +67,21 @@ function PortfolioPage() {
                 {item.label}
               </Button>
             ))}
+            {/* CV Download Button */}
+            <Link href="/public/Mohamed_SeifEddin_cv.pdf" download>
+              <Button
+                variant="solid"
+                colorScheme="teal"
+                _hover={{ bg: 'teal.600' }}
+              >
+                Download CV
+              </Button>
+            </Link>
           </HStack>
         </Flex>
       </Box>
 
+      {/* Content */}
       <Container maxW="900px" py={24}>
         <VStack align="center" spacing={8} ref={aboutRef} py={12} bg="gray.900" minH="100vh">
           <Heading size="2xl" fontWeight="bold" textAlign="center" >
@@ -150,7 +160,7 @@ function PortfolioPage() {
 
         <Divider borderColor="gray.600" />
 
-        {/* hobbys */}
+        {/* Hobby's & Passies */}
         <VStack align="center" spacing={6} ref={experienceRef} py={12} bg="gray.900" minH="100vh">
           <Heading size="2xl" textAlign="center" fontWeight="bold" >
             Hobby's & Passies
@@ -180,7 +190,7 @@ function PortfolioPage() {
               <Text fontSize="lg" color="gray.300" fontWeight="medium">
                 🎥 <b>Video Maken & Creatieve Content:</b> Ik ben gepassioneerd door het creëren van content en het delen van mijn verhalen via platforms zoals 
                 <Link color="teal.400" href="https://www.tiktok.com/@ms_lift" isExternal> TikTok</Link>, 
-                <Link color="teal.400" href="https://www.instagram.com/ms_liftss/reels/" isExternal> Instagram</Link>, en als podcaster op <Link color="teal.400" href="https://www.youtube.com/@Thebrothercastbe" isExternal> YouTube</Link>. 
+                <Link color="teal.400" href="https://www.instagram.com/ms_liftss/reels/" isExternal> Instagram</Link>, en als podcaster op <Link color="teal.400" href="https://www.youtube.com/@Thebrothercastbe" isExternal>YouTube</Link>. 
                 Dit proces helpt me niet alleen om mijn vaardigheden in filmen en bewerken te verbeteren, maar het biedt me ook de kans om mensen te inspireren. 
                 Mijn doel is om mijn boodschap van zelfverbetering, motivatie en groei op een authentieke manier over te brengen en anderen te helpen de beste versie van zichzelf te worden.
               </Text>
@@ -228,6 +238,7 @@ function PortfolioPage() {
 
           <Divider borderColor="gray.600" mt={8} />
         </VStack>
+
         {/* Contact */}
         <VStack align="center" spacing={6} ref={contactRef}>
           <Heading size="2xl" textAlign="center" fontWeight="bold">
