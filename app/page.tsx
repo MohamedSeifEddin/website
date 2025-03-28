@@ -13,8 +13,10 @@ export default function Home() {
         <section className="min-h-screen flex flex-col items-center justify-center text-white text-center px-6">
           <h1 className="text-5xl font-extrabold">Hi, I&apos;m Kyno.</h1>
           <p className="mt-4 text-lg text-gray-200">
-            Business Analyst Student at Hogent
+            Final Year Business Analyst Student, Anticipating Graduation in 2025
+            🎓 at Hogent
           </p>
+
           <Link href="#projects">
             <button className="mt-6 bg-white text-purple-600 px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">
               Check out my projects
