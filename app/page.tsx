@@ -288,8 +288,8 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-600 mt-2">
                   Currently in development, a collaborative project with Arthur
-                  Vercammen to create an interactive math exercise platform with
-                  personalized learning features.
+                  Vercammen and Seppe Visart to create an interactive math
+                  exercise platform with personalized learning features.
                 </p>
                 <a
                   href="https://studyfile.be/"
