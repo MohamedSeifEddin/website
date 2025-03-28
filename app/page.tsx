@@ -151,7 +151,7 @@ export default function Home() {
                 { icon: "/skills/nextjs.png" },
                 { icon: "/skills/node.png" },
                 { icon: "/skills/abap.png" },
-                { icon: "/skills/SApUI5.png" },
+                { icon: "/skills/sapui.png" },
                 { icon: "/skills/Figma-Logo.png" },
                 { icon: "/skills/xml.svg" },
                 { icon: "/skills/cap.png" },
