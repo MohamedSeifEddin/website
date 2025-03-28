@@ -7,9 +7,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+
+      <main className="bg-gradient-to-br from-purple-600 to-cyan-500">
         {/* Hero Section */}
-        <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-purple-600 to-cyan-500 text-white text-center px-6">
+        <section className="min-h-screen flex flex-col items-center justify-center text-white text-center px-6">
           <h1 className="text-5xl font-extrabold">Hi, I&apos;m Kyno.</h1>
           <p className="mt-4 text-lg text-gray-200">
             Business Analyst Student at Hogent
@@ -19,7 +20,7 @@ export default function Home() {
               Check out my projects
             </button>
           </Link>
-          <div className="mt-8 flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-12 sm:space-y-0">
+          <div className="mt-8 flex justify-center space-x-12">
             {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/kyno-van-de-velde-7bb876266/"
@@ -31,7 +32,7 @@ export default function Home() {
             </a>
             {/* Download CV */}
             <a
-              href="https://drive.google.com/file/d/1qY7spDaK8uQ2DvKuoH5UnVF-PCA00jv3/view?usp=sharing"
+              href="https://drive.google.com/file/d/1j3UWdCA0DhvsZXmY99lboJP4EhUB5akK/view"
               target="_blank"
               className="text-white text-xl font-semibold px-8 py-3 rounded-full border-2 border-transparent bg-green-500 hover:bg-green-600 hover:border-green-500 transition-all duration-300 transform hover:scale-105"
             >
@@ -41,35 +42,104 @@ export default function Home() {
         </section>
 
         {/* About Me */}
-        <section id="about" className="py-20 bg-gray-100">
-          <div className="container mx-auto max-w-4xl text-center space-y-6">
-            <h2 className="text-4xl font-bold text-gray-800">About Me</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              I am a Business Analysis student at Hogent, studying Applied
-              Computer Science with a focus on Functional & Business Analysis.
-              My studies have taught me how IT solutions can help organizations
-              optimize processes and achieve strategic goals. In addition to my
-              technical skills, I am passionate about Formula 1, where I admire
-              the speed, precision, and strategic thinking that are essential in
-              both racing and business. I believe these traits quick analysis,
-              accuracy, and always considering the bigger picture drive me to
-              find effective, strategic solutions in my professional life. I am
-              committed to continuously improving my skills to bridge the gap
-              between business needs and technical solutions.
+        <section id="about" className="py-20 text-white text-center px-6">
+          <div className="container mx-auto max-w-3xl">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-6">
+              About Me
+            </h2>
+            <p className="text-lg text-gray-200 leading-relaxed">
+              I am a <span className="font-semibold">Business Analysis</span>{" "}
+              student at
+              <span className="font-semibold"> Hogent</span>, studying
+              <span className="font-semibold"> Applied Computer Science</span>
+              with a focus on{" "}
+              <span className="font-semibold">
+                Functional & Business Analysis
+              </span>
+              . My studies have taught me how IT solutions can help
+              organizations optimize processes and achieve strategic goals.
+            </p>
+            <p className="text-lg text-gray-200 leading-relaxed mt-4">
+              Beyond my technical expertise, I have a deep passion for
+              <span className="font-semibold"> Formula 1</span>, where I admire
+              the speed, precision, and strategic thinking that define both
+              racing and business. These qualities—quick analysis, accuracy, and
+              a big-picture mindset—drive me to develop effective solutions.
+            </p>
+            <p className="text-lg text-gray-200 leading-relaxed mt-4">
+              I am committed to continuously refining my skills to bridge the
+              gap between
+              <span className="font-semibold"> business needs</span>
+              and <span className="font-semibold">technical solutions</span>.
+            </p>
+          </div>
+        </section>
+        {/* Formula 1 Passion Section */}
+        <section id="f1-passion" className="py-20  text-white text-center px-6">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-8">
+              My Passion for Formula 1
+            </h2>
+            {/* Formula 1 Logo and Enhanced Visuals */}
+            <div className="flex justify-center mb-12">
+              <img
+                src="/F1.svg.webp" // Ensure to use a high-quality image
+                alt="Formula 1 Logo"
+                className="w-36 h-auto object-contain mb-6 " // Enlarge the logo and add shadow
+              />
+            </div>
+            <p className="text-lg text-gray-200 leading-relaxed">
+              My passion for <span className="font-semibold">Formula 1</span>{" "}
+              goes beyond just the thrill of the sport. It’s about the
+              combination of speed, precision, and strategic thinking that
+              defines both the racing world and the business arena. Much like
+              F1, I strive to balance pushing the limits while staying ahead of
+              the competition. This mindset drives my approach to business
+              analysis.
+            </p>
+            <p className="text-lg text-gray-200 leading-relaxed mt-6">
+              The relentless pursuit of improvement, whether in racing or
+              business, fuels my ambitions. Just like the engineers who
+              fine-tune F1 cars, I focus on optimizing processes, ensuring peak
+              performance, and adapting strategies to stay competitive. The
+              strategic decisions made by drivers and teams on and off the track
+              continually inspire my approach to problem-solving in the business
+              world.
+            </p>
+            <p className="text-lg text-gray-200 leading-relaxed mt-6">
+              Beyond the professional world, I also participate in{" "}
+              <span className="font-semibold">league racing</span> on the F1
+              game. Competing at a high level in virtual racing has enhanced my
+              understanding of competition, strategy, and the importance of
+              teamwork. In fact, I have won the{" "}
+              <span className="font-semibold">Constructor Championship</span> in
+              my league, an achievement that reflects my ability to build a
+              strong, cohesive team and execute flawless strategies under
+              pressure. These experiences have further refined my skills in
+              making quick decisions, optimizing performance, and adapting to
+              ever-changing challenges.
+            </p>
+
+            <p className="text-lg text-gray-200 leading-relaxed mt-6">
+              Whether in racing or business, my focus is always on mastering the
+              details while keeping the bigger picture in mind. In both domains,
+              it’s all about performance, precision, and adaptability.
             </p>
           </div>
         </section>
 
         {/* Skills */}
-        <section id="skills" className="py-20 bg-gray-50">
-          <div className="container mx-auto max-w-6xl text-center space-y-10">
-            <h2 className="text-4xl font-bold text-gray-800">My Skills</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <section id="skills" className="py-20 text-white text-center px-6">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-6">
+              My Skills
+            </h2>
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
               I have experience in a variety of technologies that enable me to
-              create powerful, scalable solutions. Below are the skills that I
-              use to build innovative projects.
+              create powerful, scalable solutions. Below are the skills I use to
+              build innovative projects.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mt-8">
               {[
                 { icon: "/skills/drupal.png" },
                 { icon: "/skills/react.png" },
@@ -81,10 +151,15 @@ export default function Home() {
                 { icon: "/skills/nextjs.png" },
                 { icon: "/skills/node.png" },
                 { icon: "/skills/abap.png" },
+                { icon: "/skills/SApUI5.png" },
+                { icon: "/skills/Figma-Logo.png" },
+                { icon: "/skills/xml.svg" },
+                { icon: "/skills/cap.png" },
+                { icon: "/skills/Git_icon.svg.png" },
               ].map(({ icon }, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow-xl hover:shadow-xl rounded-xl p-8 transition-transform transform hover:scale-105"
+                  className="bg-white shadow-lg hover:shadow-2xl rounded-xl p-8 transition-transform transform hover:scale-105"
                 >
                   <Image
                     src={icon}
@@ -100,9 +175,11 @@ export default function Home() {
         </section>
 
         {/* Education */}
-        <section id="education" className="py-20 bg-white">
-          <div className="container mx-auto max-w-6xl text-center space-y-10">
-            <h2 className="text-4xl font-bold text-gray-800">My Education</h2>
+        <section id="education" className="py-20 text-white text-center px-6">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-6">
+              My Education
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
@@ -123,7 +200,7 @@ export default function Home() {
               ].map((edu, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                  className="bg-white shadow-lg hover:shadow-2xl rounded-xl p-8 transition-all transform hover:scale-105"
                 >
                   <div className="flex justify-center mb-4">
                     <Image
@@ -147,9 +224,12 @@ export default function Home() {
         </section>
 
         {/* Work Experience */}
-        <section id="work-experience" className="py-20 bg-gray-100">
-          <div className="container mx-auto max-w-6xl text-center space-y-10">
-            <h2 className="text-4xl font-bold text-gray-800">
+        <section
+          id="work-experience"
+          className="py-20 text-white text-center px-6"
+        >
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-6">
               My Work Experience
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
@@ -159,22 +239,19 @@ export default function Home() {
                   role: "Internship",
                   duration: "Feb 2025 - Present",
                   description: `During my internship at Flexso, I will work on a SAP UI5 budget application with CAP and explored potential LLM implementations.`,
-                  logo: "/flexso.png", // Ensure the correct relative path
+                  logo: "/flexso.png",
                 },
                 {
                   company: "TD SYNNEX",
                   role: "System Configurator",
                   duration: "Jun 2021 - Present",
-                  description: `Responsible for configuring systems and solving technical problems. 
-          Since 2021, I have worked every summer at TD Synnex as a system configurator, managing tasks like imaging and upgrading laptops for Signpost according to client specifications, such as additional RAM or storage.
-          Additionally, I resolve technical issues during the process. Over time, I have taken on more responsibilities, such as preparing orders, printing labels, and mentoring new team members. 
-          This role has enhanced my leadership and communication skills, including collaborating in English with non-Dutch-speaking colleagues.`,
-                  logo: "/tdsynnex.png", // Ensure the correct relative path
+                  description: `Responsible for configuring systems and solving technical problems. Since 2021, I have worked every summer at TD Synnex as a system configurator, managing tasks like imaging and upgrading laptops for Signpost according to client specifications, such as additional RAM or storage. Additionally, I resolve technical issues during the process. Over time, I have taken on more responsibilities, such as preparing orders, printing labels, and mentoring new team members. This role has enhanced my leadership and communication skills, including collaborating in English with non-Dutch-speaking colleagues.`,
+                  logo: "/tdsynnex.png",
                 },
               ].map((job, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                  className="bg-white shadow-lg hover:shadow-2xl rounded-xl p-8 transition-all transform hover:scale-105"
                 >
                   <div className="flex justify-center mb-4">
                     <Image
@@ -196,24 +273,35 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* Projects */}
-        <section id="projects" className="py-20 bg-gray-50">
-          <div className="container mx-auto max-w-6xl text-center space-y-10">
-            <h2 className="text-4xl font-bold text-gray-800">My Projects</h2>
+        <section id="projects" className="py-20  text-white text-center px-6">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-6">
+              My Projects
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {/* Oefeningenwebsite */}
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
                 <h3 className="text-xl font-semibold text-gray-800">
-                  Studyfile{" "}
+                  Studyfile
                 </h3>
                 <p className="text-gray-600 mt-2">
                   Currently in development, a collaborative project with Arthur
-                  Vercammen & Seppe Visart to create an interactive math
-                  exercise platform with personalized learning features.
+                  Vercammen to create an interactive math exercise platform with
+                  personalized learning features.
                 </p>
+                <a
+                  href="https://studyfile.be/"
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Link
+                </a>
               </div>
+
               {/* MK Luxe Detailing - Next.js Website */}
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
                 <h3 className="text-xl font-semibold text-gray-800">
                   MK Luxe Detailing Website
                 </h3>
@@ -234,7 +322,7 @@ export default function Home() {
               </div>
 
               {/* Spots of Knowledge - Drupal Website */}
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
                 <h3 className="text-xl font-semibold text-gray-800">
                   Spots of Knowledge - Website
                 </h3>
@@ -255,7 +343,7 @@ export default function Home() {
               </div>
 
               {/* Sap Build App */}
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
                 <h3 className="text-xl font-semibold text-gray-800">
                   Sap Build App
                 </h3>
@@ -269,7 +357,7 @@ export default function Home() {
               </div>
 
               {/* Sap Fiori App */}
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
                 <h3 className="text-xl font-semibold text-gray-800">
                   Sap Fiori App
                 </h3>
@@ -284,7 +372,7 @@ export default function Home() {
               </div>
 
               {/* Flexso - Business Software Project */}
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
                 <h3 className="text-xl font-semibold text-gray-800">
                   Flexso - Business Software Project
                 </h3>
@@ -305,7 +393,7 @@ export default function Home() {
               </div>
 
               {/* PrestigeDrive */}
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
                 <h3 className="text-xl font-semibold text-gray-800">
                   PrestigeDrive
                 </h3>
@@ -319,7 +407,7 @@ export default function Home() {
               </div>
 
               {/* Splendor Game */}
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
                 <h3 className="text-xl font-semibold text-gray-800">
                   Splendor Game
                 </h3>

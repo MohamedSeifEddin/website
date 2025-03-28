@@ -4,10 +4,13 @@
 
 /* Custom Gradients */
 .bg-gradient-to-br {
-  background: linear-gradient(to bottom right, #3a64ed, #06B6D4);
+  background: linear-gradient(to bottom right, #3a64ed, #06b6d4);
 }
 
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+}
+body {
+  font-family: "Reddit Sans", cursive;
 }
