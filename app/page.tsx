@@ -228,48 +228,54 @@ export default function Home() {
         {/* Work Experience */}
         <section
           id="work-experience"
-          className="py-20 text-white text-center px-6"
+          className="py-20 text-white text-center px-6 "
         >
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-5xl font-extrabold tracking-tight mb-6">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-12 text-gray-100 drop-shadow-lg">
               My Work Experience
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {[
                 {
                   company: "Flexso",
                   role: "Internship",
                   duration: "Feb 2025 - Present",
-                  description: `During my internship at Flexso, I will work on a SAP UI5 budget application with CAP and explore potential LLM implementations.`,
+                  description:
+                    "During my internship at Flexso, I will work on a SAP UI5 budget application with CAP and explore potential LLM implementations.",
                   logo: "/flexso.png",
                 },
                 {
                   company: "TD SYNNEX",
                   role: "System Configurator",
                   duration: "Jun 2021 - Present",
-                  description: `Responsible for configuring systems and solving technical problems. Since 2021, I have worked every summer at TD Synnex as a system configurator, managing tasks like imaging and upgrading laptops for Signpost according to client specifications, such as additional RAM or storage. Additionally, I resolve technical issues during the process. Over time, I have taken on more responsibilities, such as preparing orders, printing labels, and mentoring new team members. This role has enhanced my leadership and communication skills, including collaborating in English with non-Dutch-speaking colleagues.`,
+                  description:
+                    "Responsible for configuring systems and solving technical problems. Since 2021, I have worked every summer at TD Synnex as a system configurator, managing tasks like imaging and upgrading laptops for Signpost according to client specifications, such as additional RAM or storage. Additionally, I resolve technical issues during the process. Over time, I have taken on more responsibilities, such as preparing orders, printing labels, and mentoring new team members. This role has enhanced my leadership and communication skills, including collaborating in English with non-Dutch-speaking colleagues.",
                   logo: "/tdsynnex.png",
                 },
               ].map((job, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow-lg hover:shadow-2xl rounded-xl p-8 transition-all transform hover:scale-105"
+                  className="bg-white shadow-xl hover:shadow-2xl rounded-2xl p-8 transition-all transform hover:scale-105 flex flex-col items-center text-center"
                 >
-                  <div className="flex justify-center mb-4">
+                  <div className="flex justify-center mb-6">
                     <Image
                       src={job.logo}
                       alt={`${job.company} logo`}
-                      className="w-16 h-16 object-contain"
+                      className="w-20 h-20 object-contain rounded-full border-2 border-gray-300 p-2 bg-gray-50 shadow-md"
                       width={100}
                       height={100}
                     />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-800">
+                  <h3 className="text-2xl font-bold text-gray-800">
                     {job.role}
                   </h3>
-                  <p className="text-gray-600 mt-2">{job.company}</p>
-                  <p className="text-gray-500 mt-1">{job.duration}</p>
-                  <p className="text-gray-600 mt-4">{job.description}</p>
+                  <p className="text-lg text-gray-600 mt-1 font-medium">
+                    {job.company}
+                  </p>
+                  <p className="text-gray-500 mt-1 text-sm">{job.duration}</p>
+                  <p className="text-gray-700 mt-4 leading-relaxed">
+                    {job.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -277,150 +283,101 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section id="projects" className="py-20  text-white text-center px-6">
+        <section id="projects" className="py-20 text-white text-center px-6">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-5xl font-extrabold tracking-tight mb-6">
+            <h2 className="text-5xl font-extrabold tracking-tight mb-12 text-gray-100 drop-shadow-lg">
               My Projects
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-              {/* Oefeningenwebsite */}
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Studyfile
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  Currently in development, a collaborative project with Arthur
-                  Vercammen and Seppe Visart to create an interactive math
-                  exercise platform with personalized learning features.
-                </p>
-                <a
-                  href="https://studyfile.be/"
-                  target="_blank"
-                  className="text-blue-500 hover:underline"
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+              {[
+                {
+                  title: "Studyfile",
+                  description:
+                    "Currently in development, a collaborative project with Arthur Vercammen and Seppe Visart to create an interactive math exercise platform with personalized learning features.",
+                  link: "https://studyfile.be/",
+                  image: "/studyfile.png",
+                },
+                {
+                  title: "MK Luxe Detailing Website",
+                  description:
+                    "A website developed with Next.js for MK Luxe Detailing, showcasing their services and offerings.",
+                  link: "https://mkluxedetailing.be/",
+                  image: "/mkluxedetailing.webp",
+                },
+                {
+                  title: "Spots of Knowledge - Website",
+                  description:
+                    "A booking platform for events built using Drupal, providing an intuitive user experience for both customers and admins.",
+                  link: "https://test-spotsofknowledge.pantheonsite.io/",
+                  image: "/spots.jpg",
+                },
+                {
+                  title: "Flexso - Business Software Project",
+                  description:
+                    "A project aimed at familiarizing with SAP technologies by developing an event management application with SAP CAP.",
+                  link: "https://github.com/flexso-hogent/P2BS_2324_Aalst",
+                  image: "/flexso.png",
+                },
+                {
+                  title: "PrestigeDrive",
+                  description:
+                    "A car rental website developed with React.js for the frontend and Node.js for the backend.",
+                  image: "/prestigedrive.webp",
+                },
+                {
+                  title: "Splendor Game",
+                  description:
+                    "A Java implementation of the game Splendor, using JavaFX for the user interface.",
+                  image: "/splendor.jpg",
+                },
+                // No-image projects go last
+                {
+                  title: "Sap Build App",
+                  description:
+                    "A car management app where users can add, edit, and remove cars, utilizing a custom API hosted on Google Cloud Firestore.",
+                  image: "",
+                },
+                {
+                  title: "Sap Fiori App",
+                  description:
+                    "A simple app built with SAP Fiori showcasing favorite games for a student. Includes basic web technologies such as HTML, CSS, and JavaScript.",
+                  image: "",
+                },
+              ].map((project, index) => (
+                <div
+                  key={index}
+                  className={`bg-white shadow-xl hover:shadow-2xl rounded-2xl transition-all transform hover:scale-105 flex flex-col items-center text-center ${
+                    project.image ? "p-8" : "p-5" // Reduce padding for no-image projects
+                  }`}
                 >
-                  Link
-                </a>
-              </div>
-
-              {/* MK Luxe Detailing - Next.js Website */}
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  MK Luxe Detailing Website
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  A website developed with Next.js for MK Luxe Detailing,
-                  showcasing their services and offerings.
-                </p>
-                <p className="text-gray-600 mt-2">
-                  <strong>Skills:</strong> Next.js
-                </p>
-                <a
-                  href="https://mkluxedetailing.be/"
-                  target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Link
-                </a>
-              </div>
-
-              {/* Spots of Knowledge - Drupal Website */}
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Spots of Knowledge - Website
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  A booking platform for events built using Drupal, providing an
-                  intuitive user experience for both customers and admins.
-                </p>
-                <p className="text-gray-600 mt-2">
-                  <strong>Skills:</strong> Drupal
-                </p>
-                <a
-                  href="https://test-spotsofknowledge.pantheonsite.io/"
-                  target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Link
-                </a>
-              </div>
-
-              {/* Sap Build App */}
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Sap Build App
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  A car management app where users can add, edit, and remove
-                  cars, utilizing a custom API hosted on Google Cloud Firestore.
-                </p>
-                <p className="text-gray-600 mt-2">
-                  <strong>Skills:</strong> SAP Build, Cloud Firestore
-                </p>
-              </div>
-
-              {/* Sap Fiori App */}
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Sap Fiori App
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  A simple app built with SAP Fiori showcasing favorite games
-                  for a student. Includes basic web technologies such as HTML,
-                  CSS, and JavaScript.
-                </p>
-                <p className="text-gray-600 mt-2">
-                  <strong>Skills:</strong> JavaScript, CSS, HTML
-                </p>
-              </div>
-
-              {/* Flexso - Business Software Project */}
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Flexso - Business Software Project
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  A project aimed at familiarizing with SAP technologies by
-                  developing an event management application with SAP CAP.
-                </p>
-                <p className="text-gray-600 mt-2">
-                  <strong>Skills:</strong> SAP, JavaScript, CSS, XML
-                </p>
-                <a
-                  href="https://github.com/flexso-hogent/P2BS_2324_Aalst"
-                  target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  View on GitHub
-                </a>
-              </div>
-
-              {/* PrestigeDrive */}
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  PrestigeDrive
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  A car rental website developed with React.js for the frontend
-                  and Node.js for the backend.
-                </p>
-                <p className="text-gray-600 mt-2">
-                  <strong>Skills:</strong> React.js, Node.js, SQL
-                </p>
-              </div>
-
-              {/* Splendor Game */}
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Splendor Game
-                </h3>
-                <p className="text-gray-600 mt-2">
-                  A Java implementation of the game Splendor, using JavaFX for
-                  the user interface.
-                </p>
-                <p className="text-gray-600 mt-2">
-                  <strong>Skills:</strong> Java, JavaFX
-                </p>
-              </div>
+                  {project.image && (
+                    <div className="mb-4">
+                      <Image
+                        src={project.image}
+                        alt={`${project.title} image`}
+                        className="w-full h-48 object-cover rounded-lg shadow-md"
+                        width={400}
+                        height={300}
+                      />
+                    </div>
+                  )}
+                  <h3 className="text-2xl font-bold text-gray-800">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-700 mt-4 leading-relaxed text-sm">
+                    {project.description}
+                  </p>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      className="text-blue-500 hover:underline mt-4"
+                    >
+                      View Project
+                    </a>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </section>

@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const metadata = {
   title: "Kyno",
-  description: "A personal portfolio site",
+  description: "My personal portfolio website",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

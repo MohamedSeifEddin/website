@@ -13,6 +13,43 @@ const Header = () => {
           <Link href="/">Kyno</Link>
         </div>
 
+        {/* Desktop Navigation */}
+        <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <li>
+            <Link href="#about" className="hover:text-blue-600 transition">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="#skills" className="hover:text-blue-600 transition">
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link href="#education" className="hover:text-blue-600 transition">
+              Education
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#work-experience"
+              className="hover:text-blue-600 transition"
+            >
+              Work Experience
+            </Link>
+          </li>
+          <li>
+            <Link href="#projects" className="hover:text-blue-600 transition">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link href="#contact" className="hover:text-blue-600 transition">
+              Contact
+            </Link>
+          </li>
+        </ul>
+
         {/* Hamburger Menu for Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -42,11 +79,11 @@ const Header = () => {
           </svg>
         </button>
 
-        {/* Side Navigation Menu */}
+        {/* Mobile Navigation Menu */}
         <div
           className={`fixed top-0 left-0 w-64 h-full bg-blue-600 text-white transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-500 ease-in-out z-50`}
+          } transition-transform duration-500 ease-in-out z-50 md:hidden`}
         >
           <ul className="flex flex-col items-center justify-center space-y-8 h-full">
             <li>
@@ -83,6 +120,15 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Work Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#projects"
+                className="text-xl font-medium hover:text-gray-200 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Projects
               </Link>
             </li>
             <li>
