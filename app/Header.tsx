@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    //@ts-ignore
+    //@ts-expect-error
     const handleEsc = (e) => {
       if (e.key === "Escape") setIsOpen(false);
     };
