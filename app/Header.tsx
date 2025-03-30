@@ -16,8 +16,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    //@ts-expect-error
-    const handleEsc = (e) => {
+    const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsOpen(false);
     };
 

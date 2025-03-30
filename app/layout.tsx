@@ -16,8 +16,6 @@ export const metadata = {
     "business analysis, functional analysis, applied computer science, portfolio",
   authors: [{ name: "Kyno" }],
   creator: "Kyno",
-  themeColor: "#0891b2",
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
