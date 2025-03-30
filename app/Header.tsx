@@ -16,7 +16,8 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    const handleEsc = (e: any) => {
+    //@ts-ignore
+    const handleEsc = (e) => {
       if (e.key === "Escape") setIsOpen(false);
     };
 
@@ -34,10 +35,6 @@ const Header = () => {
       document.body.style.overflow = "unset";
     };
   }, [isOpen]);
-
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
 
   return (
     <header
