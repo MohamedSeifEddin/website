@@ -240,7 +240,7 @@ export default function Home() {
                   company: "Flexso",
                   role: "Internship",
                   duration: "Feb 2025 - Present",
-                  description: `During my internship at Flexso, I will work on a SAP UI5 budget application with CAP and explored potential LLM implementations.`,
+                  description: `During my internship at Flexso, I will work on a SAP UI5 budget application with CAP and explore potential LLM implementations.`,
                   logo: "/flexso.png",
                 },
                 {
