@@ -226,7 +226,7 @@ export default function Home() {
                 { icon: "/skills/sql.png", name: "SQL" },
                 { icon: "/skills/java.png", name: "Java" },
                 { icon: "/skills/html.png", name: "HTML5" },
-                { icon: "/skills/css.png", name: "CSS3" },
+                { icon: "/skills/css.png", name: "CSS" },
                 { icon: "/skills/nextjs.png", name: "Next.js" },
                 { icon: "/skills/node.png", name: "Node.js" },
                 { icon: "/skills/abap.png", name: "ABAP" },
@@ -461,7 +461,7 @@ export default function Home() {
                   description:
                     "A Java implementation of the popular board game Splendor, featuring a polished JavaFX user interface and complete game logic.",
                   image: "/splendor.jpg",
-                  tags: ["Java", "JavaFX", "Game Development"],
+                  tags: ["Java", "JavaFX"],
                 },
                 {
                   title: "SAP Build App",
