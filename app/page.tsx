@@ -13,8 +13,8 @@ export default function Home() {
         <section className="min-h-screen flex flex-col items-center justify-center text-white text-center px-6">
           <h1 className="text-5xl font-extrabold">Hi, I&apos;m Kyno.</h1>
           <p className="mt-4 text-lg text-gray-200">
-            Final Year Business Analyst Student, Anticipating Graduation in 2025
-            🎓 at Hogent
+            Final year business analyst student, anticipating graduation in 2025
+            🎓 at HOGENT
           </p>
 
           <Link href="#projects">
@@ -34,7 +34,7 @@ export default function Home() {
             </a>
             {/* Download CV */}
             <a
-              href="https://drive.google.com/file/d/1j3UWdCA0DhvsZXmY99lboJP4EhUB5akK/view"
+              href="https://drive.google.com/file/d/1qY7spDaK8uQ2DvKuoH5UnVF-PCA00jv3/view?usp=sharing"
               target="_blank"
               className="text-white text-xl font-semibold px-8 py-3 rounded-full border-2 border-transparent bg-green-500 hover:bg-green-600 hover:border-green-500 transition-all duration-300 transform hover:scale-105"
             >
@@ -71,7 +71,7 @@ export default function Home() {
             <p className="text-lg text-gray-200 leading-relaxed mt-4">
               I am committed to continuously refining my skills to bridge the
               gap between
-              <span className="font-semibold"> business needs</span>
+              <span className="font-semibold"> business needs </span>
               and <span className="font-semibold">technical solutions</span>.
             </p>
           </div>
