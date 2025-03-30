@@ -84,7 +84,7 @@ export default function Home() {
                 About Me
               </span>
             </h2>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-1 gap-8 items-center">
               <div className="bg-white rounded-xl shadow-xl p-8 transform transition-all hover:shadow-2xl">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                   Professional Background
@@ -114,30 +114,25 @@ export default function Home() {
                   achieve strategic objectives through effective
                   business-technology alignment.
                 </p>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-xl p-8 transform transition-all hover:shadow-2xl">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                  Personal Approach
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  Beyond my technical expertise, I have a deep passion for{" "}
+                  <span className="font-semibold text-teal-700">Formula 1</span>
+                  , where I admire the speed, precision, and strategic thinking
+                  that define both racing and business. These qualities—quick
+                  analysis, accuracy, and a big-picture mindset—drive me to
+                  develop effective solutions.
+                </p>
+                <p className="text-gray-600 leading-relaxed mt-4">
                   I am committed to continuously refining my skills to bridge
-                  the gap between
+                  the gap between{" "}
                   <span className="font-semibold text-teal-700">
-                    {" "}
-                    business needs{" "}
-                  </span>
+                    business needs
+                  </span>{" "}
                   and{" "}
                   <span className="font-semibold text-teal-700">
                     technical solutions
                   </span>
                   .
-                </p>
-                <p className="text-gray-600 leading-relaxed mt-4">
-                  I approach projects with the same precision, strategic
-                  thinking, and adaptability that I admire in Formula 1 racing –
-                  values that drive me to develop effective solutions in both
-                  technical implementation and business strategy.
                 </p>
               </div>
             </div>
@@ -168,8 +163,8 @@ export default function Home() {
 
                 <div className="space-y-4">
                   <p className="text-gray-300 leading-relaxed">
-                    My passion for Formula 1 extends beyond entertainment – it's
-                    about the perfect harmony of
+                    My passion for Formula 1 extends beyond entertainment –
+                    it&apos;s about the perfect harmony of
                     <span className="font-semibold text-red-400">
                       {" "}
                       technology
@@ -199,14 +194,13 @@ export default function Home() {
                     <span className="font-semibold text-red-400">
                       league racing
                     </span>{" "}
-                    competitions, where I've secured a{" "}
+                    competitions, where I&apos;ve secured a{" "}
                     <span className="font-semibold text-red-400">
                       Constructor Championship
                     </span>
                     . This experience has strengthened my ability to make quick
                     decisions, optimize performance, and adapt to dynamic
-                    challenges – all valuable skills in the business technology
-                    landscape.
+                    challenges.
                   </p>
                 </div>
               </div>
@@ -222,10 +216,7 @@ export default function Home() {
                 Technical Expertise
               </span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center leading-relaxed mb-12">
-              My technical toolkit enables me to create powerful, scalable
-              solutions that bridge business needs with technology.
-            </p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center leading-relaxed mb-12"></p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {[
@@ -362,7 +353,7 @@ export default function Home() {
                   role: "Internship",
                   duration: "Feb 2025 - Present",
                   description:
-                    "Currently developing a SAP UI5 budget application with CAP backend, exploring potential LLM implementations to enhance user experience and automate financial processes.",
+                    "Currently developing a SAP UI5 budget application with CAP backend and exploring potential LLM implementations.",
                   logo: "/flexso.png",
                   color: "bg-blue-600",
                 },
@@ -371,7 +362,7 @@ export default function Home() {
                   role: "System Configurator",
                   duration: "Jun 2021 - Present",
                   description:
-                    "Responsible for configuring systems and solving technical problems for enterprise clients. Managing tasks including imaging and upgrading laptops according to client specifications, as well as preparing orders, printing labels, and mentoring new team members. Successfully developed leadership skills while collaborating in a multilingual environment with non-Dutch speaking colleagues.",
+                    "Responsible for configuring systems and solving technical problems. Managing tasks including imaging and upgrading laptops according to client specifications, as well as preparing orders, printing labels, and mentoring new team members. Successfully developed leadership skills while collaborating in a multilingual environment with non-Dutch speaking colleagues.",
                   logo: "/tdsynnex.png",
                   color: "bg-red-600",
                 },
@@ -547,11 +538,11 @@ export default function Home() {
           <div className="container mx-auto max-w-4xl px-6 text-center">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
               <span className="inline-block pb-2 border-b-4 border-teal-600">
-                Let's Connect
+                Let&apos;s Connect
               </span>
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              I'm always open to discussing new projects, opportunities in
+              I&apos;m always open to discussing new projects, opportunities in
               business analysis, or technology innovations. Feel free to reach
               out!
             </p>
