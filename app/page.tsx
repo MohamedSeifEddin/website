@@ -34,7 +34,7 @@ export default function Home() {
             </a>
             {/* Download CV */}
             <a
-              href="https://drive.google.com/file/d/1qY7spDaK8uQ2DvKuoH5UnVF-PCA00jv3/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zhqhBcyivf4QRc0oVnZ1GjvGRE_58c0J/view?usp=sharing"
               target="_blank"
               className="text-white text-xl font-semibold px-8 py-3 rounded-full border-2 border-transparent bg-green-500 hover:bg-green-600 hover:border-green-500 transition-all duration-300 transform hover:scale-105"
             >
