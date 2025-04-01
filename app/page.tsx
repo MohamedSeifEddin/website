@@ -140,73 +140,79 @@ export default function Home() {
         </section>
 
         {/* Formula 1 Passion Section - More visually engaging */}
-        <section
+        {/* <section
           id="f1-passion"
-          className="py-24 bg-gradient-to-br from-gray-900 to-gray-800 text-white"
+          className="py-24 bg-gradient-to-br from-gray-900 via-gray-850 to-gray-800 text-white"
         >
           <div className="container mx-auto max-w-5xl px-6">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-2/5 flex justify-center">
-                <div className="relative rounded-full bg-gradient-to-br from-red-600 to-red-700 p-1 shadow-2xl">
+                <div className="relative rounded-full bg-gradient-to-br from-red-600 to-red-700 p-1 shadow-2xl transform transition-transform duration-500 hover:scale-105">
                   <img
                     src="/F1.svg.webp"
                     alt="Formula 1 Logo"
                     className="w-64 h-64 object-contain p-8"
+                    loading="lazy"
                   />
                 </div>
               </div>
 
               <div className="md:w-3/5">
                 <h2 className="text-4xl font-bold mb-8 inline-block pb-2 border-b-4 border-red-500">
-                  My Passion for Formula 1
+                  Analytical Mindset Through Formula 1
                 </h2>
 
-                <div className="space-y-4">
-                  <p className="text-gray-300 leading-relaxed">
-                    My passion for Formula 1 extends beyond entertainment –
-                    it&apos;s about the perfect harmony of
+                <div className="space-y-6">
+                  <p className="text-gray-200 leading-relaxed text-lg">
+                    My passion for Formula 1 represents more than
+                    entertainment—it embodies the perfect synergy of
                     <span className="font-semibold text-red-400">
                       {" "}
-                      technology
+                      precision engineering
                     </span>
                     ,
                     <span className="font-semibold text-red-400">
                       {" "}
-                      strategy
+                      data-driven strategy
                     </span>
                     , and
                     <span className="font-semibold text-red-400">
                       {" "}
-                      human performance
+                      peak performance
                     </span>
-                    . This mindset directly influences my approach to business
-                    analysis.
+                    . This mindset directly informs my approach to business
+                    analysis and problem-solving.
                   </p>
 
-                  <p className="text-gray-300 leading-relaxed">
-                    Just as F1 teams relentlessly pursue improvement through
-                    data and innovation, I approach business challenges with the
-                    same analytical precision and drive for optimization.
+                  <p className="text-gray-200 leading-relaxed text-lg">
+                    Similar to how F1 teams analyze telemetry data to find
+                    millisecond advantages, I apply analytical rigor to identify
+                    business optimizations and process improvements that drive
+                    meaningful results.
                   </p>
 
-                  <p className="text-gray-300 leading-relaxed">
-                    I actively participate in{" "}
-                    <span className="font-semibold text-red-400">
-                      league racing
-                    </span>{" "}
-                    competitions, where I&apos;ve secured a{" "}
-                    <span className="font-semibold text-red-400">
-                      Constructor Championship
-                    </span>
-                    . This experience has strengthened my ability to make quick
-                    decisions, optimize performance, and adapt to dynamic
-                    challenges.
-                  </p>
+                  <div className="mt-8 p-4 bg-gray-800 bg-opacity-50 rounded-lg border-l-4 border-red-500">
+                    <p className="text-gray-200 leading-relaxed text-lg italic">
+                      As an active competitor in
+                      <span className="font-semibold text-red-400">
+                        {" "}
+                        competitive league racing
+                      </span>
+                      , I&apos;ve contributed to a
+                      <span className="font-semibold text-red-400">
+                        {" "}
+                        Constructor Championship
+                      </span>
+                      victory—an experience that has strengthened my ability to
+                      make strategic decisions under pressure and adapt to
+                      rapidly changing conditions.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Skills - Modern card-based layout */}
         <section id="skills" className="py-24 bg-gray-50">
