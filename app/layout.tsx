@@ -9,13 +9,13 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Kyno | Business Analysis Professional",
+  title: "Mohamed | Business Analysis Professional",
   description:
     "Business Analysis portfolio showcasing expertise in functional analysis, applied computer science, and IT solutions.",
   keywords:
     "business analysis, functional analysis, applied computer science, portfolio",
-  authors: [{ name: "Kyno" }],
-  creator: "Kyno",
+  authors: [{ name: "Mohamed" }],
+  creator: "Mohamed",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

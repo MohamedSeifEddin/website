@@ -44,8 +44,8 @@ const Header = () => {
       <nav className="container mx-auto flex justify-between items-center px-6 relative">
         {/* Logo */}
         <div className="text-2xl font-extrabold text-blue-600 transition-colors duration-300">
-          <Link href="/" aria-label="Kyno - Home">
-            Kyno
+          <Link href="/" aria-label="Mohamed - Home">
+            Mohamed
           </Link>
         </div>
 
@@ -154,7 +154,7 @@ const Header = () => {
             </div>
 
             <div className="flex items-center justify-center p-6 border-b border-blue-500">
-              <span className="text-2xl font-bold">Kyno</span>
+              <span className="text-2xl font-bold">Mohamed</span>
             </div>
 
             <ul className="flex flex-col space-y-4 p-6 overflow-y-auto flex-grow">
@@ -192,7 +192,7 @@ const Header = () => {
             </ul>
 
             <div className="p-6 border-t border-blue-500 text-center text-sm">
-              &copy; {new Date().getFullYear()} Kyno
+              &copy; {new Date().getFullYear()} Mohamed
             </div>
           </div>
         </div>

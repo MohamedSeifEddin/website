@@ -15,13 +15,13 @@ export default function Home() {
           <div className="relative z-10 max-w-4xl">
             <h1 className="text-6xl font-extrabold mb-4 tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-200">
-                Hi, I&apos;m Kyno.
+                Hi, I&apos;m Mohamed.
               </span>
             </h1>
             <p className="mt-4 text-xl text-gray-100 font-light">
               Business Analyst | Applied Computer Science Student
               <span className="block mt-2 text-cyan-200">
-                Graduating from HOGENT in 2025 🎓
+                Graduating from HOGENT in 2026 🎓
               </span>
             </p>
 
@@ -34,7 +34,7 @@ export default function Home() {
 
               <div className="flex gap-4 mt-6 sm:mt-0">
                 <a
-                  href="https://www.linkedin.com/in/kyno-van-de-velde-7bb876266/"
+                  href="https://www.linkedin.com/in/Mohamed-van-de-velde-7bb876266/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 w-12 h-12 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
@@ -555,7 +555,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <a
-                href="mailto:kyno1204@gmail.com"
+                href="mailto:Mohamed1204@gmail.com"
                 className="inline-flex items-center justify-center bg-gradient-to-r from-teal-600 to-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:from-teal-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 font-medium"
               >
                 <svg
@@ -575,7 +575,7 @@ export default function Home() {
                 Contact Me
               </a>
               <a
-                href="https://www.linkedin.com/in/kyno-van-de-velde-7bb876266/"
+                href="https://www.linkedin.com/in/Mohamed-van-de-velde-7bb876266/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-medium"
