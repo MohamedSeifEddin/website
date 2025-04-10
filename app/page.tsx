@@ -19,6 +19,7 @@ import {
   FaMicrophone,
 } from "react-icons/fa";
 import Image from "next/image";
+import { RefObject } from "react";
 
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -26,12 +27,17 @@ export default function Home() {
   const experienceRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
   const [isScrolling, setIsScrolling] = useState(false);
 
-  const scrollToSection = (ref: any, label: any) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-    setActiveSection(label);
+  const scrollToSection = (
+    ref: RefObject<HTMLDivElement | null>,
+    label: string
+  ) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(label);
+    }
   };
 
   useEffect(() => {
