@@ -299,7 +299,7 @@ export default function Home() {
           <section ref={experienceRef} className="min-h-screen py-16">
             <h2 className="text-4xl font-bold text-center mb-16">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
-                Hobby&apos;'s
+                Hobby&apos;s
               </span>
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
